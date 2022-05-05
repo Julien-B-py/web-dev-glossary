@@ -15,6 +15,7 @@ body {
     font-family: 'Radio Canada', sans-serif;
     flex-direction: column;
     gap: 2rem;
+    color: #512d9b;
 }
 
 button {
@@ -29,10 +30,15 @@ button {
     cursor: pointer;
 }
 
+button:last-child {
+    background-color: #ef2911;
+  }
+  
+
 .card {
     perspective: 1000px;
     position: relative;
-    width: 850px;
+    width: min(850px, 90%);
     aspect-ratio: 1.57;
 }
 
@@ -41,33 +47,37 @@ button {
     height: 100%;
     width: 100%;
     backface-visibility: hidden;
-    transition: ease-in-out 600ms;
+    /* transition: ease-in-out 600ms; */
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 30px;
     justify-content: center;
     align-items: center;
-    color: #512d9b;
     padding: 6%;
 }
 
 
 .card__front h2 {
-    font-size: 5rem;
+    font-size: clamp(1.8rem, 1.1600000000000001rem + 3.2vw, 5rem);
 }
 
 
 .card__back {
     transform: rotateY(-180deg);
-    font-size: 2rem;
+    font-size: clamp(0.8rem, 0.56rem + 1.2vw, 2rem);
 }
 
 
-.card:hover .card__front {
+/* .card:hover .card__front {
     transform: rotateY(180deg);
 }
 
 .card:hover .card__back {
     transform: rotateY(0deg);
+} */
+
+.buttons {
+    display: flex;
+    gap: 2rem;
 }
