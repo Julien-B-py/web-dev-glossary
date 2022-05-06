@@ -1,5 +1,3 @@
-import { glossary } from '/glossary.js';
-
 const h1 = document.querySelector("h1");
 
 h1.textContent = `Il vous reste ${glossary.length} mots à apprendre.`;

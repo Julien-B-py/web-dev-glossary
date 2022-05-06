@@ -1,4 +1,4 @@
-export const glossary = [
+const glossary = [
     {
         word: "Agile",
         definition: "Les méthodes de développement en approche agile visent la satisfaction réelle des besoins d’informatisation du client.Elles l’impliquent pendant tout le développement et permettent une grande réactivité à ses demandes.",
