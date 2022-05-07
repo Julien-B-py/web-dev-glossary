@@ -1,6 +1,18 @@
+const myGlossary = [...glossary];
+
 const h1 = document.querySelector("h1");
 
-h1.textContent = `Il vous reste ${glossary.length} mots à apprendre.`;
+const updateGlossaryCount = () => {
+
+    if (myGlossary.length === 0) {
+        h1.textContent = `Vous connaissez tous les mots à apprendre.`;
+        return;
+    }
+
+    h1.textContent = `Il vous reste ${myGlossary.length} mots à apprendre.`;
+}
+
+updateGlossaryCount();
 
 const card = document.querySelector(".card");
 const front = card.querySelector(".card__front");
@@ -19,26 +31,41 @@ const getRandomInt = (max) => {
 
 const drawCard = () => {
 
-    let index = getRandomInt(glossary.length - 1);
-    while (index === previousCardIndex) {
-        index = getRandomInt(glossary.length - 1);
+    if (myGlossary.length === 0) {
+        textFront.textContent = "";
+        textBack.textContent = "";
+        return;
     }
+
+    let index = getRandomInt(myGlossary.length - 1);
 
     gsap.set(front, { clearProps: "all" });
     gsap.set(back, { clearProps: "all" });
     flipped = false;
 
-    textFront.textContent = glossary[index].word;
-    textBack.textContent = glossary[index].definition;
+    textFront.textContent = myGlossary[index].word;
+    textBack.textContent = myGlossary[index].definition;
     previousCardIndex = index;
+
 }
 
-buttons.forEach(button => button.addEventListener("click", drawCard));
+const deleteCurrentWord = () => {
+    myGlossary.splice(previousCardIndex, 1);
+    updateGlossaryCount();
+    drawCard();
+}
+
+const skipCurrentWord = () => {
+    drawCard();
+}
+
+// OK
+buttons[0].addEventListener("click", deleteCurrentWord);
+// NOK
+buttons[1].addEventListener("click", skipCurrentWord);
 
 let flipped = false;
 card.addEventListener("click", () => {
-
-
 
     if (!flipped) {
         gsap.to(front, { rotationY: -180, duration: 1 });
