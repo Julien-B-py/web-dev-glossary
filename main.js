@@ -2,10 +2,20 @@ const myGlossary = [...glossary];
 
 const h1 = document.querySelector("h1");
 
+const card = document.querySelector(".card");
+const front = card.querySelector(".card__front");
+const back = card.querySelector(".card__back");
+
+const buttons = document.querySelectorAll("button");
+const textFront = document.querySelector(".card__front h2");
+const textBack = document.querySelector(".card__back p");
+
 const updateGlossaryCount = () => {
 
     if (myGlossary.length === 0) {
         h1.textContent = `Vous connaissez tous les mots à apprendre.`;
+        card.remove();
+        buttons.forEach(button => button.remove());
         return;
     }
 
@@ -14,13 +24,7 @@ const updateGlossaryCount = () => {
 
 updateGlossaryCount();
 
-const card = document.querySelector(".card");
-const front = card.querySelector(".card__front");
-const back = card.querySelector(".card__back");
 
-const buttons = document.querySelectorAll("button");
-const textFront = document.querySelector(".card__front h2");
-const textBack = document.querySelector(".card__back p");
 
 var previousCardIndex = -1;
 
