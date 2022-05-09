@@ -6,16 +6,28 @@ const card = document.querySelector(".card");
 const front = card.querySelector(".card__front");
 const back = card.querySelector(".card__back");
 
+const buttonsDiv = document.querySelector(".buttons");
 const buttons = document.querySelectorAll("button");
 const textFront = document.querySelector(".card__front h2");
 const textBack = document.querySelector(".card__back p");
 
+const clearDisplay = () => {
+    card.remove();
+    buttonsDiv.remove();
+    h1.textContent = "Félicitations vous connaissez tous les mots à apprendre.";
+    gsap.to(h1, { autoAlpha: 1 })
+}
+
 const updateGlossaryCount = () => {
 
     if (myGlossary.length === 0) {
-        h1.textContent = `Vous connaissez tous les mots à apprendre.`;
-        card.remove();
-        buttons.forEach(button => button.remove());
+
+        var tl = gsap.timeline({ onComplete: clearDisplay });
+        tl.to(h1, { autoAlpha: 0 })
+            .to(card, { autoAlpha: 0 })
+            .to(buttons[0], { autoAlpha: 0 })
+            .to(buttons[1], { autoAlpha: 0 })
+
         return;
     }
 
