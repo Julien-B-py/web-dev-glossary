@@ -132,4 +132,50 @@ const glossary = [
         definition: "(Source Wikipédia du 06/10/2017) Le cross-site scripting est un type de faille de sécurité des sites web permettant d'injecter du contenu dans une page, permettant ainsi de provoquer des actions sur les navigateurs web visitant la page.",
     },
 
+
+    {
+        word: "Activité type",
+        definition: "Une activité type est un bloc de compétences qui résulte de l’agrégation de tâches (ce qu’il y a à faire dans l’emploi) dont les missions et finalités sont suffisamment proches pour être regroupées. Elle renvoie au certificat de compétences professionnelles (CCP).",
+    },
+    {
+        word: "Activité type d'extension",
+        definition: "Une activité type d’extension est un bloc de compétences qui résulte de l’agrégation de tâches qui constituent un domaine d’action ou d’intervention élargi de l’emploi type. On la rencontre seulement dans certaines déclinaisons de l’emploi type. Cette activité n’est pas dans tous les TP. Quand elle est présente, elle est attachée à un ou des TP. Elle renvoie au certificat complémentaire de spécialisation (CCS).",
+    },
+    {
+        word: "Compétence professionnelle",
+        definition: "La compétence professionnelle se traduit par une capacité à combiner un ensemble de savoirs, savoir faire, comportements, conduites, procédures, type de raisonnement, en vue de réaliser une tâche ou une activité. Elle a toujours une finalité professionnelle. Le résultat de sa mise en œuvre est évaluable.",
+    },
+    {
+        word: "Compétence transversale",
+        definition: "La compétence transversale désigne une compétence générique commune aux diverses situations professionnelles de l’emploi type. Parmi les compétences transversales, on peut recenser les compétences correspondant : - à des savoirs de base, - à des attitudes comportementales et/ou organisationnelles.",
+    },
+    {
+        word: "Critère de performance",
+        definition: "Un critère de performance sert à porter un jugement d’appréciation sur un objet en termes de résultat(s) attendu(s) : il revêt des aspects qualitatifs et/ou quantitatifs.",
+    },   {
+        word: "Emploi type",
+        definition: "L’emploi type est un modèle d’emploi représentatif d’un ensemble d’emplois réels suffisamment proches, en termes de mission, de contenu et d’activités effectuées, pour être regroupées : il s’agit donc d’une modélisation, résultante d’une agrégation critique des emplois.",
+    },   {
+        word: "Référentiel d’Emploi, Activités et Compétences (REAC)",
+        definition: "Le REAC est un document public à caractère règlementaire (visé par l’arrêté du titre professionnel) qui s’applique aux titres professionnels du ministère chargé de l’emploi. Il décrit les repères pour une représentation concrète du métier et des compétences qui sont regroupées en activités dans un but de certification.",
+    },   {
+        word: "Savoir",
+        definition: "Un savoir est une connaissance mobilisée dans la mise en œuvre de la compétence professionnelle ainsi qu’un processus cognitif impliqué dans la mise en œuvre de ce savoir.",
+    },   {
+        word: "Savoir-faire organisationnel",
+        definition: "C’est un savoir et un savoir faire de l’organisation et du contexte impliqués dans la mise en œuvre de l’activité professionnelle pour une ou plusieurs personnes.",
+    },
+    {
+        word: "Savoir-faire relationnel",
+        definition: "C’est un savoir comportemental et relationnel qui identifie toutes les interactions socioprofessionnelles réalisées dans la mise en œuvre de la compétence professionnelle pour une personne. Il s’agit d’identifier si la relation s’exerce : à côté de (sous la forme d’échange d’informations) ou en face de (sous la forme de négociation) ou avec (sous la forme de travail en équipe ou en partenariat etc.).",
+    },
+    {
+        word: "Savoir-faire technique",
+        definition: "Le savoir-faire technique est le savoir procéder, savoir opérer à mobiliser en utilisant une technique dans la mise en œuvre de la compétence professionnelle ainsi que les processus cognitifs impliqués dans la mise en œuvre de ce savoir-faire.",
+    },
+    {
+        word: "Titre professionnel",
+        definition: "La certification professionnelle délivrée par le ministre chargé de l'emploi est appelée « titre professionnel ». Ce titre atteste que son titulaire maîtrise les compétences, aptitudes et connaissances permettant l'exercice d'activités professionnelles qualifiées. (Article R338-1 et suivants du Code de l’Education).",
+    },
+
 ];

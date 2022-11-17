@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     background-color: #ced8f2;
     min-height: 100vh;
@@ -38,7 +37,6 @@ h1 {
     text-align: center;
 }
 
-
 .container {
     width: min(90%, 1000px);
     display: flex;
@@ -53,6 +51,7 @@ h1 {
     position: relative;
     width: 100%;
     aspect-ratio: 0.64;
+    cursor: pointer;
 }
 
 .card__front, .card__back {
@@ -70,17 +69,14 @@ h1 {
     padding: 6%;
 }
 
-
 .card__front h2 {
     font-size: clamp(1.8rem, 1.1600000000000001rem + 3.2vw, 5rem);
 }
-
 
 .card__back {
     transform: rotateY(-180deg);
     font-size: clamp(1.2rem, 1.04rem + 0.8vw, 2rem);
 }
-
 
 /* .card:hover .card__front {
     transform: rotateY(180deg);
@@ -94,8 +90,6 @@ h1 {
     display: flex;
     gap: 2rem;
 }
-
-
 
 @media only screen and (min-width : 768px) {
     .card {
